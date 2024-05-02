@@ -1,0 +1,94 @@
+html,body{
+    background-color: rgb(53, 54, 58);
+    background-image: url('img/bkg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    height: 100%;
+    min-height: 100% !important;
+}
+fieldset{
+    float: left;
+    border-radius: 0.8rem;
+    border: line;
+    border-width: 0.1rem;
+    padding-right: 10rem;
+}
+label{
+    padding: 0.8rem;
+    font-size: x-large;
+}
+
+legend{
+    padding:1rem;
+    font-size: xx-large;
+}
+.intro{
+    float: left;
+}
+.space{
+    padding:0.5rem;
+
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid aliceblue;
+    border-radius: 20%;
+    padding:0.8rem;
+    padding-left: 10rem;
+    width: fit-content;
+    font-size: x-large;
+    &::selection {
+        border:none;
+        border-bottom: 1px solid aliceblue;
+    }
+    &::placeholder{
+        font-style: italic;
+    }
+    &:active{
+        background-color:transparent;
+        border: none;
+    }
+    
+    color:aliceblue;
+}
+button{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid aliceblue;
+    border-radius: 20%;
+    padding:0.8rem;
+    font-size: x-large;
+    color:aliceblue;
+    &:active{
+        background-color:rgb(54, 56, 71);
+        border: none;
+}
+}
+.me{
+    border: none;
+    float: right;
+}
+.u{
+    padding: 5rem;
+}
+.u1{
+    padding: 0.1rem;
+}
+div {
+    transition: width 0.3s  cubic-bezier(0.54, 0.38, 0.13, 0.77);;
+    position: relative;
+    animation: mymove 5s ;
+    /* Transition width property */
+}
+
+@keyframes mymove {
+    from {top: 1000px;}
+    to {top: 0px;}
+}
+h1,h2{
+    text-align: center;
+    position:relative;
+}
